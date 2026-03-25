@@ -1,0 +1,18 @@
+# Run Services Configuration
+# Copy to services.yaml and customize
+#
+# Format:
+#   services:
+#     - name:
+#         repo: repository URL (required)
+#         path: local path (optional, defaults to services/name)
+#         metarepo: true if this is a metarepo with services/ subdirectory
+
+services:
+  # CLI
+  - run:
+      repo: git@github.com:omnidotdev/run-cli#master
+
+  # Website
+  - run-site:
+      repo: git@github.com:omnidotdev/run-site#master
